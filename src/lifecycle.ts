@@ -6,6 +6,6 @@ export const useMounted = (callback: () => void) => {
 
 export const useUnMounted = (callback: () => void) => {
     useEffect(() => {
-        callback();
+        return callback;
     }, []);
 };
