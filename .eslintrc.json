@@ -1,0 +1,8 @@
+{
+    "extends": [
+        "akrc"
+    ],
+    "rules": {
+        "no-unused-vars": "off"
+    }
+}

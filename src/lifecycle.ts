@@ -1,5 +1,11 @@
-import {useEffect} from 'react'
+import {useEffect} from 'react';
 
 export const useMounted = (callback: () => void) => {
-    useEffect(callback, [])
-}
+    useEffect(callback, []);
+};
+
+export const useUnMounted = (callback: () => void) => {
+    useEffect(() => {
+        callback();
+    }, []);
+};
