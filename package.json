@@ -1,10 +1,10 @@
 {
-  "name": "reuse",
-  "version": "1.0.0",
+  "name": "@akrc/reuse",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,9 @@
     "@types/react": "^18.0.26",
     "eslint": "^8.29.0",
     "eslint-config-akrc": "^0.0.11",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "rollup": "^3.8.1",
+    "rollup-plugin-ts": "^3.0.2",
+    "typescript": "^4.9.4"
   }
 }
