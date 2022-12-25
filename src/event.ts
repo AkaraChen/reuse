@@ -1,4 +1,4 @@
-import {useEffect} from 'react';
+import { useEffect } from 'react';
 
 interface Option {
     target: EventTarget
@@ -10,7 +10,7 @@ export const useEventListener = (
     option: Option
 ) => {
     useEffect(() => {
-        const {target = window} = option;
+        const { target = window } = option;
         target.addEventListener(eventName, handler);
         return () => {
             target.removeEventListener(eventName, handler);

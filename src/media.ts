@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import isBrowser from '../util/isBrowser';
 
 export const useMedia = (media: string, default_: boolean = false) => {
