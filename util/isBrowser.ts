@@ -1,3 +1,2 @@
-const isBroswer = typeof window === 'undefined';
-
-export default isBroswer;
+export const isBroswer = typeof window === 'undefined';
+export const isSevrer = !isBroswer;

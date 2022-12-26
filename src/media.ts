@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
-import isBrowser from '../util/isBrowser';
+import {isSevrer} from '../util/isBrowser';
 
 export const useMedia = (media: string, default_: boolean = false) => {
-    if (!isBrowser) return default_;
+    if (isSevrer) return default_;
     const mediaQuery = window.matchMedia(media);
     const [value, setValue] = useState(mediaQuery.matches);
     const handler = (event: MediaQueryListEvent) =>
