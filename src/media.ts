@@ -1,5 +1,5 @@
-import {useEffect, useState} from 'react';
-import {isSevrer} from '../util/isBrowser';
+import { useEffect, useState } from 'react';
+import { isSevrer } from '../util/isBrowser';
 
 export const useMedia = (media: string, default_: boolean = false) => {
     if (isSevrer) return default_;
