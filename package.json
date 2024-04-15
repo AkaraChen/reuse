@@ -3,7 +3,8 @@
 	"private": true,
 	"scripts": {
 		"check": "biome check . --apply",
-		"test": "vitest run"
+		"test": "vitest run",
+		"e2e": "pnpm -r e2e"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.6.4",
