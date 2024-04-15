@@ -1,1 +1,1 @@
-export * from "./faker";
+export { useVisualViewport } from "./store";

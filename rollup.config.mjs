@@ -7,4 +7,5 @@ export default defineConfig({
 		dir: "dist",
 	},
 	plugins: [ts()],
+	external: ["react", "react-dom"],
 });
