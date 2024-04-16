@@ -1,3 +1,4 @@
+import "client-only";
 import { useSyncExternalStore } from "react";
 
 export const useVisualViewport = () => {
@@ -11,5 +12,6 @@ export const useVisualViewport = () => {
 			};
 		},
 		() => visualViewport,
+		() => null,
 	);
 };
