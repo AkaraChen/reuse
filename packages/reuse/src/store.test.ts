@@ -1,4 +1,5 @@
-import { renderHook } from "@testing-library/react-hooks";
+import { renderHook } from "@testing-library/react";
+
 import { describe, test } from "vitest";
 import { useVisualViewport } from "./store";
 

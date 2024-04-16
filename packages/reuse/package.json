@@ -1,12 +1,12 @@
 {
 	"name": "@akrc/reuse",
 	"version": "0.1.0",
-	"module": "./dist/index.js",
-	"types": "./dist/index.d.ts",
-	"typings": "./dist/index.d.ts",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.mts",
+	"typings": "./dist/index.d.mts",
 	"description": "Yet another react hooks library.",
 	"scripts": {
-		"build": "rollup -c ./rollup.config.mjs"
+		"build": "tsup"
 	},
 	"keywords": [],
 	"author": {
@@ -17,14 +17,27 @@
 	"license": "ISC",
 	"exports": {
 		".": {
-			"import": "./dist/index.js",
-			"types": "./dist/index.d.ts"
-		}
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.mts"
+		},
+		"./router": {
+			"import": "./dist/router/index.mjs",
+			"types": "./dist/router/index.d.mts"
+		},
+		"./next": {
+			"import": "./dist/next/index.mjs",
+			"types": "./dist/next/index.d.mts"
+		},
+		"./package.json": "./package.json"
 	},
 	"files": [
 		"./dist"
 	],
 	"dependencies": {
 		"client-only": "^0.0.1"
+	},
+	"peerDependencies": {
+		"next": "13.4.4",
+		"react-router-dom": "^6.22.3"
 	}
 }

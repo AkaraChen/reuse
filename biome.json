@@ -11,5 +11,10 @@
 	},
 	"formatter": {
 		"enabled": true
+	},
+	"files": {
+		"ignoreUnknown": true,
+		"include": ["**/*.ts", "**/*.tsx"],
+		"ignore": [".next"]
 	}
 }
