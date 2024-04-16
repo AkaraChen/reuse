@@ -34,7 +34,8 @@
 		"./dist"
 	],
 	"dependencies": {
-		"client-only": "^0.0.1"
+		"client-only": "^0.0.1",
+		"type-fest": "^4.15.0"
 	},
 	"peerDependencies": {
 		"next": "13.4.4",
