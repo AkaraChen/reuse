@@ -1,2 +1,3 @@
-export { useVisualViewport } from "./store";
-export { createCtx } from './context'
+import "client-only";
+
+export { useVisualViewport, createCtx } from "./client";

@@ -17,16 +17,24 @@
 	"license": "ISC",
 	"exports": {
 		".": {
-			"import": "./dist/index.mjs",
-			"types": "./dist/index.d.mts"
+			"import": "./dist/client/index.mjs",
+			"types": "./dist/client/index.d.mts"
 		},
-		"./router": {
-			"import": "./dist/router/index.mjs",
-			"types": "./dist/router/index.d.mts"
+		"./client": {
+			"import": "./dist/client/index.mjs",
+			"types": "./dist/client/index.d.mts"
+		},
+		"./server": {
+			"import": "./dist/server/index.mjs",
+			"types": "./dist/server/index.d.mts"
 		},
 		"./next": {
 			"import": "./dist/next/index.mjs",
 			"types": "./dist/next/index.d.mts"
+		},
+		"./router": {
+			"import": "./dist/router/index.mjs",
+			"types": "./dist/router/index.d.mts"
 		},
 		"./package.json": "./package.json"
 	},
@@ -35,6 +43,7 @@
 	],
 	"dependencies": {
 		"client-only": "^0.0.1",
+		"server-only": "^0.0.1",
 		"type-fest": "^4.15.0"
 	},
 	"peerDependencies": {
